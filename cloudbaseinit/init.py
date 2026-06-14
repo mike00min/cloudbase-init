@@ -103,7 +103,7 @@ class InitManager(object):
             version.check_latest_version(log_version)
 
     def _handle_plugins_stage(self, osutils, service, instance_id, stage):
-        plugins_shared_data = {}
+        shared_data = {}
         reboot_required = False
         stage_success = True
         plugins = plugins_factory.load_plugins(stage)
